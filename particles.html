@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Particles</title>
+		<meta charset="utf-8">
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script src="js/particles.js"></script>
+		<script type="text/javascript">
+			$(document).ready(particles.init);
+			$(window).resize(particles.resize);
+			function animate() {
+				particles.updateFrame();
+				requestAnimationFrame(animate);
+			}
+			window.requestAnimationFrame(animate);
+		</script>
+	</head>
+	<body>
+		<canvas id="particleCanvas" style="height:400px;width:100%;background-color:#d6f5ff;position:absolute;z-index:-1"></canvas>
+	</body>
+</html>
+	
